@@ -45,7 +45,7 @@ hickory-resolver = "0.26"
 reqwest = { version = "0.13", default-features = false, features = ["json", "rustls"] }
 
 # ASN/Geo databases
-maxminddb = "0.32"
+maxminddb = "0.33"
 ipnetwork = "0.21"
 
 # Serialization
@@ -78,7 +78,7 @@ is-terminal = "0.4"
 # Gateway detection - Linux (netlink) and macOS (sysctl) only
 # FreeBSD excluded: getifs uses macOS-specific APIs (NET_RT_IFLIST2, rt_msghdr)
 [target.'cfg(any(target_os = "linux", target_os = "macos"))'.dependencies]
-getifs = "0.7"
+getifs = "0.8"
 
 [dev-dependencies]
 tokio-test = "0.4"
